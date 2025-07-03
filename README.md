@@ -1,10 +1,10 @@
-my-project/
-├── pom.xml                # 父项目 POM
-├── common/                # 公共模块
-│   └── pom.xml
-├── model/                 # 模型模块（POJO、DTO）
-│   └── pom.xml
-├── repository/            # 数据访问层
-│   └── pom.xml
-├── service/               # 服务层
-    └── pom.xml
+父项目（my-project）
+    根目录下的 pom.xml 作为项目总配置，定义全局依赖版本、子模块列表及项目基础信息。
+公共模块（common）
+    存放跨模块通用工具类（如字符串处理、加密工具）、异常定义、常量枚举等，为其他模块提供基础支持。
+模型模块（model）
+    包含数据实体类（Entity）、数据传输对象（DTO）、视图对象（VO）等，定义系统数据结构。
+数据访问层（repository）
+    封装数据库操作接口（如 JPA Repository、MyBatis Mapper），实现与数据库的交互逻辑。
+服务层（service）
+    实现核心业务逻辑，依赖数据访问层完成数据操作，向上层提供服务接口。
