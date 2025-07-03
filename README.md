@@ -1,3 +1,10 @@
-基于Springboot的Web项目脚手架
-SpringbootDemo作为依赖管理,由它来作为统一管理其他层。
-Pojo为实体层,Server为服务层,Common作为通用层。
+my-project/
+├── pom.xml                # 父项目 POM
+├── common/                # 公共模块
+│   └── pom.xml
+├── model/                 # 模型模块（POJO、DTO）
+│   └── pom.xml
+├── repository/            # 数据访问层
+│   └── pom.xml
+├── service/               # 服务层
+    └── pom.xml
